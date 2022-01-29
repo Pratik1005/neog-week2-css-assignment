@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000DE;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 100px;
+    width: 256px;
+}
+
+.header {
+    padding: 16px 0 10px 16px;
+}
+
+h5 {
+    padding-top: 2px;
+    color: #00000099;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 5px;   
+}
+
+.menus a.link {
+    display: flex;
+    /* justify-content: space-between; for right icon */
+    align-items: center;
+    padding: 8px; 
+}
+
+.menus a.link:hover {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+/* a:active {
+    background-color: rgba(98, 0, 238, 0.2);
+} */
+
+span.material-icons {
+    margin-right: 30px;
+    color: rgba(0,0,0,0.6);
+    /* order: 1; for right icon */
+}
+
+.clicked {
+    color: #6200eede;
+    background-color: rgba(98, 0, 238, 0.2);
+    border-radius: 5px;
+    /* position: relative;
+    z-index: 2; */
+}
+
+.menus .options {
+    display: none;
+}
+
+.menus .options.show-option {
+    display: block;
+}
+
+.menus .options span.material-icons {
+    padding-left: 20px;
+}
