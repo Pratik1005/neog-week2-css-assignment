@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,0.32);
+}
+
+h3 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+p {
+    color: #00000099;
+    padding: 10px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.dialog-1 .links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+.dialog-1 .links a {
+    text-decoration: none;
+    color: rgb(98, 0, 238);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.dialog-1 .links a:hover {
+    background-color: rgba(98, 0, 238, 0.05);
+    border-radius: 2px;
+}
+
+section.base-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dialog-2 .links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog-2 .links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: #000000de;
+    padding: 8px;
+}
+
+.dialog-2 .links a:hover {
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 2px;
+}
+
+.dialog-2 .action span.material-icons {
+    font-size: 40px;
+    color: rgba(0,0,0,0.38);
+    margin-right: 10px;
+}
+
+.dialog-3 a {
+    text-decoration: none;
+    color: rgb(98, 0, 238);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.dialog-3 a:hover {
+    background-color: rgba(98, 0, 238, 0.05);
+    border-radius: 2px;
+}
+
+.dialog-3 .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 10px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+.dialog-3 .links .radio-input {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.dialog-3 input[type="radio"] {
+    accent-color: rgb(98, 0, 238);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dialog-3 label {
+    color: #000000DE;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.dialog-3 .action {
+    display: flex;
+    /* flex-direction: column; stacked btns */
+    align-items: flex-end;
+    padding: 10px;
+}
