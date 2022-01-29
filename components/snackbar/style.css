@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+}
+
+p {
+    margin: 20px;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #bb86fc;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #333333;
+    color: #FFFFFFDE;
+    font-size: 14px;
+    padding: 5px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    /* margin: 20px; */
+}
+
+.container.leading {
+    left: 30px;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container.baseline {
+    left: 50%;
+    bottom: 30px;
+    margin-left: -200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container.stacked {
+    right: 30px;
+    bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container.stacked .stacked-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+span.text {
+    padding-left: 10px; 
+}
+
+span.material-icons {
+    font-size: 16px;
+    padding: 12px;
+}
+
+span.material-icons:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
